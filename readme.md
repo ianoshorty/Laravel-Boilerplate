@@ -20,9 +20,10 @@ To use this boilerplate, do the following:
 4. Copy `.env.example` file to `.env` and update vars as appropriate.
 5. SSH into installation
 6. Run `$ ./setup.sh` to setup Mailcatcher
-7. Run `$ npm install` to install dependancies.
-8. Run `$ gulp watch` to start developing.
-9. To run Mailcatcher - `$ mailcatcher --ip 192.168.10.10`
+7. Run `$ composer install` to load project PHP dependancies
+8. Run `$ npm install` to install Node dependancies.
+9. Run `$ gulp watch` to start developing.
+10. To run Mailcatcher - `$ mailcatcher --ip 192.168.10.10`
 
 ### Version
 1.0.0
