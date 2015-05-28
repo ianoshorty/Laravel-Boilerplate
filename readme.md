@@ -2,7 +2,9 @@
 
 Alter CHANGELOG and README.
 
-Update gulpfile with correct hostname for site
+Update gulpfile with correct hostname for site.
+
+Add .env var with config vars.
 
 ./setup.sh
 
