@@ -1,20 +1,28 @@
-# Install
+# Laravel 5.0 Boilerplate With Bower, BrowserSync, Bootstrap-SASS and Mailcatcher
 
-Alter CHANGELOG and README.
+This is the Laravel 5.0 boilerplate I work with on my internal projects. It includes:
 
-Update gulpfile with correct hostname for site.
+  - Bower for front end package management. Files are placed in the /resources/assets/bower directory
+  - BrowserSync for rapid application development and testing. See below for setup instructions.
+  - Bootstrap-SASS - prefer SASS implementation over LESS, installed via bower and can be easily removed.
+  - Mailcatcher - Catches outbound email - see below for usage instructions.
+  - Standard files - CHANGELOG.md and README.md
+  
+It is intended to be used with Homestead, but should be fairly compatible across any VM / LAMP installation.
 
-Add .env var with config vars.
+## Project Setup and Usage
 
-./setup.sh
+To use this boilerplate, do the following: 
 
-npm install
+1. Clone the repo.
+2. Alter `CHANGELOG.md` and `README.md`.
+3. Update `gulpfile.js` with correct hostname for site.
+4. Copy `.env.example` file to `.env` and update vars as appropriate.
+5. SSH into installation
+6. Run `$ ./setup.sh` to setup Mailcatcher
+7. Run `$ npm install` to install dependancies.
+8. Run `$ gulp watch` to start developing.
+9. To run Mailcatcher - `$ mailcatcher --ip 192.168.10.10`
 
-gulp watch
-
-// Run Mailcatcher
-`$ mailcatcher --ip 192.168.10.10`
-
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+### Version
+1.0.0
