@@ -1,0 +1,22 @@
+{
+  "name": "boilerplate",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ianoshorty/Laravel-Boilerplate",
+  "authors": [
+    "Ian Outterside <ianoshorty@gmail.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.4"
+  }
+}

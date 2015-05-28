@@ -1,3 +1,17 @@
+# Install
+
+Alter CHANGELOG and README.
+
+Update gulpfile with correct hostname for site
+
+./setup.sh
+
+npm install
+
+gulp watch
+
+// Run Mailcatcher
+`$ mailcatcher --ip 192.168.10.10`
 
 ### License
 

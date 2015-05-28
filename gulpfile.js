@@ -1,5 +1,7 @@
 var elixir = require('laravel-elixir');
 
+require('laravel-elixir-browser-sync');
+
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
@@ -12,5 +14,24 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-    mix.less('app.less');
+
+    mix.sass('app.scss');
+
+    mix.scripts([
+        '/bower/jquery/dist/jquery.js',
+        '/bower/bootstrap-sass/assets/javascripts/bootstrap.js',
+        '/bower/bootstrap-sass/assets/javascripts/bootstrap-sprockets.js',
+        '/js/app.js'
+    ], 'public/js/app.js', 'resources/assets');
+
+    mix.version(["css/app.css", "js/app.js"]);
+
+    mix.browserSync([
+        'app/**/*',
+        'public/**/*',
+        'resources/views/**/*'
+    ], {
+        proxy: 'rpvrphp.dev',
+        reloadDelay: 2000
+    });
 });
